@@ -9,7 +9,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information on this item's compatibility with Gluten Free diets")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-18T04:57:06.480Z[GMT]")public class BrandedFoodObjectDietLabelsGlutenFree   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-18T16:42:42.538Z[GMT]")public class BrandedFoodObjectDietLabelsGlutenFree   {
   private String name = null;
   private Boolean isCompatible = null;
   private Integer compatibilityLevel = null;
