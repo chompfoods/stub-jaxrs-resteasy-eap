@@ -21,7 +21,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-18T16:45:17.485Z[GMT]")public class BrandedFoodObjectItems   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-18T16:45:47.049Z[GMT]")public class BrandedFoodObjectItems   {
   private String barcode = null;
   private String name = null;
   private String brand = null;
@@ -357,10 +357,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
-   * An array of vitamins that this item contains
+   * An array of vitamins that can be found in this item
    **/
   
-  @Schema(description = "An array of vitamins that this item contains")
+  @Schema(description = "An array of vitamins that can be found in this item")
   @JsonProperty("vitamins")
   public List<String> getVitamins() {
     return vitamins;
