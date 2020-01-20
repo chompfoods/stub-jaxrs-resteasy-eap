@@ -12,6 +12,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 
 import io.swagger.model.BrandedFoodObject;
+import io.swagger.model.IngredientObject;
 
 import java.util.List;
 import java.util.Map;
@@ -26,7 +27,7 @@ import javax.validation.constraints.*;
 @Path("/food")
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-18T16:53:38.172Z[GMT]")public interface FoodApi  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-20T16:28:37.434Z[GMT]")public interface FoodApi  {
    
     @GET
     @Path("/branded/barcode.php")
@@ -91,5 +92,21 @@ import javax.validation.constraints.*;
                 @ApiResponse(responseCode = "500", description = "__Server error__ - Internal server error, request failed, or base error. _[Contact us](https://chompthis.com/api/ticket-new.php) if you see this._")
          })
     Response foodBrandedSearchPhpGet( @QueryParam("allergen") String allergen, @QueryParam("brand") String brand, @QueryParam("category") String category, @QueryParam("country") String country, @QueryParam("diet") String diet, @QueryParam("ingredient") String ingredient, @QueryParam("keyword") String keyword, @QueryParam("mineral") String mineral, @QueryParam("nutrient") String nutrient, @QueryParam("palm_oil") String palmOil, @QueryParam("trace") String trace, @QueryParam("vitamin") String vitamin, @QueryParam("limit") Integer limit, @QueryParam("page") Integer page,@Context SecurityContext securityContext);
+
+    @GET
+    @Path("/ingredient/search.php")
+    
+    @Produces({ "application/json" })
+    @Operation(summary = "Get raw/generic food ingredient item(s)", description = "# Get data for a specific ingredient or a specific set of ingredients.  __Example:__ ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=STRING/LIST&list=BOOLEAN&raw=BOOLEAN``` ", security = {
+        @SecurityRequirement(name = "ApiKeyAuth")    }, tags={  })
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "__Valid__ - Will return an object containing any matching ingredient foods.", content = @Content(schema = @Schema(implementation = IngredientObject.class))),
+                @ApiResponse(responseCode = "400", description = "__Validation error__ - Invalid parameters or request."),
+                @ApiResponse(responseCode = "401", description = "__Unauthorized__ - Invalid API key or usage limits exceeded. _[More information](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)_"),
+                @ApiResponse(responseCode = "403", description = "__Forbidden__ - Disallowed entity."),
+                @ApiResponse(responseCode = "404", description = "__Not found__ - No food items exist that match your query parameters."),
+                @ApiResponse(responseCode = "500", description = "__Server error__ - Internal server error, request failed, or base error. _[Contact us](https://chompthis.com/api/ticket-new.php) if you see this._")
+         })
+    Response foodIngredientSearchPhpGet( @NotNull @QueryParam("find") Integer find, @NotNull @QueryParam("list") Boolean list, @QueryParam("raw") Boolean raw, @QueryParam("limit") Integer limit,@Context SecurityContext securityContext);
 
 }
