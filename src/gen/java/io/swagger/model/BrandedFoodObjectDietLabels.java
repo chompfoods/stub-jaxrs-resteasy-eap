@@ -12,7 +12,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing this item's compatibility grades for each supported diet")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-20T16:28:37.434Z[GMT]")public class BrandedFoodObjectDietLabels   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-21T14:08:32.099Z[GMT]")public class BrandedFoodObjectDietLabels   {
   private BrandedFoodObjectDietLabelsVegan vegan = null;
   private BrandedFoodObjectDietLabelsVegetarian vegetarian = null;
   private BrandedFoodObjectDietLabelsGlutenFree glutenFree = null;
