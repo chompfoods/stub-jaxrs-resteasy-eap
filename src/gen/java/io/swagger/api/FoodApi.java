@@ -27,7 +27,7 @@ import javax.validation.constraints.*;
 @Path("/food")
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-21T14:14:30.462Z[GMT]")public interface FoodApi  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-21T23:19:12.767Z[GMT]")public interface FoodApi  {
    
     @GET
     @Path("/branded/barcode.php")
@@ -65,7 +65,7 @@ import javax.validation.constraints.*;
     @Path("/branded/name.php")
     
     @Produces({ "application/json" })
-    @Operation(summary = "Get a branded food item by name", description = "# Search for branded food items by name.  __Example:__ ```https://chompthis.com/api/v2/food/branded/name.php?api_key=API_KEY&name=NAME``` ", security = {
+    @Operation(summary = "Get a branded food item by name", description = "# Search for branded food items by name.  This API endpoint is only available to Standard and Premium API subscribers. Please consider upgrading your subscription if you are subscribed to the Limited plan. _[Read this](https://desk.zoho.com/portal/chompthis/kb/articles/can-i-upgrade-downgrade-my-subscription) if you aren't sure how to upgrade your subscription._  __Example:__ ```https://chompthis.com/api/v2/food/branded/name.php?api_key=API_KEY&name=NAME``` ", security = {
         @SecurityRequirement(name = "ApiKeyAuth")    }, tags={  })
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "__Valid__ - Will return an object containing any matching foods.", content = @Content(schema = @Schema(implementation = BrandedFoodObject.class))),
@@ -75,13 +75,13 @@ import javax.validation.constraints.*;
                 @ApiResponse(responseCode = "404", description = "__Not found__ - No food items exist that match your query parameters."),
                 @ApiResponse(responseCode = "500", description = "__Server error__ - Internal server error, request failed, or base error. _[Contact us](https://chompthis.com/api/ticket-new.php) if you see this._")
          })
-    Response foodBrandedNamePhpGet( @NotNull @QueryParam("name") String name, @QueryParam("limit") Integer limit,@Context SecurityContext securityContext);
+    Response foodBrandedNamePhpGet( @NotNull @QueryParam("name") String name, @QueryParam("limit") Integer limit, @QueryParam("page") Integer page,@Context SecurityContext securityContext);
 
     @GET
     @Path("/branded/search.php")
     
     @Produces({ "application/json" })
-    @Operation(summary = "Get data for branded food items using various search parameters", description = "# Search for branded food items using various parameters.  __Example:__ ```https://chompthis.com/api/v2/food/branded/search.php?api_key=API_KEY&brand=BRAND&country=COUNTRY&page=1```  ___Tip:__ Get started by using the [Query Builder](https://chompthis.com/api/build.php)._ ", security = {
+    @Operation(summary = "Get data for branded food items using various search parameters", description = "# Search for branded food items using various parameters.  This API endpoint is only available to Standard and Premium API subscribers. Please consider upgrading your subscription if you are subscribed to the Limited plan. _[Read this](https://desk.zoho.com/portal/chompthis/kb/articles/can-i-upgrade-downgrade-my-subscription) if you aren't sure how to upgrade your subscription._  __Example:__ ```https://chompthis.com/api/v2/food/branded/search.php?api_key=API_KEY&brand=BRAND&country=COUNTRY&page=1```  ___Tip:__ Get started by using the [Query Builder](https://chompthis.com/api/build.php)._ ", security = {
         @SecurityRequirement(name = "ApiKeyAuth")    }, tags={  })
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "__Valid__ - Will return an object containing any matching foods.", content = @Content(schema = @Schema(implementation = BrandedFoodObject.class))),
@@ -97,7 +97,7 @@ import javax.validation.constraints.*;
     @Path("/ingredient/search.php")
     
     @Produces({ "application/json" })
-    @Operation(summary = "Get raw/generic food ingredient item(s)", description = "# Get data for a specific ingredient or a specific set of ingredients.  __Example:__ ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=STRING/LIST&list=BOOLEAN&raw=BOOLEAN``` ", security = {
+    @Operation(summary = "Get raw/generic food ingredient item(s)", description = "# Get data for a specific ingredient or a specific set of ingredients.  This API endpoint is only available to Standard and Premium API subscribers. Please consider upgrading your subscription if you are subscribed to the Limited plan. _[Read this](https://desk.zoho.com/portal/chompthis/kb/articles/can-i-upgrade-downgrade-my-subscription) if you aren't sure how to upgrade your subscription._  __Example:__ ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=STRING/LIST&list=BOOLEAN&raw=BOOLEAN``` ", security = {
         @SecurityRequirement(name = "ApiKeyAuth")    }, tags={  })
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "__Valid__ - Will return an object containing any matching ingredient foods.", content = @Content(schema = @Schema(implementation = IngredientObject.class))),
