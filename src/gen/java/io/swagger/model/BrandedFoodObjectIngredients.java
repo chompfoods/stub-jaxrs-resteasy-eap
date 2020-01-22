@@ -9,7 +9,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing this item's ingredients in order of highest value to least")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T14:07:33.834Z[GMT]")public class BrandedFoodObjectIngredients   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T15:36:21.004Z[GMT]")public class BrandedFoodObjectIngredients   {
   private String chomp = null;
   private String usda = null;
 
@@ -27,10 +27,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
-   * This branded food item&#x27;s ingredients according to the USDA
+   * This branded food item&#x27;s ingredients, according to the USDA
    **/
   
-  @Schema(description = "This branded food item's ingredients according to the USDA")
+  @Schema(description = "This branded food item's ingredients, according to the USDA")
   @JsonProperty("usda")
   public String getUsda() {
     return usda;

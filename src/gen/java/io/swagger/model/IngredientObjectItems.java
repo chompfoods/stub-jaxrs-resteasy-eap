@@ -16,7 +16,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T14:07:33.834Z[GMT]")public class IngredientObjectItems   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T15:36:21.004Z[GMT]")public class IngredientObjectItems   {
   private String name = null;
   private List<String> categories = new ArrayList<String>();
   private IngredientObjectNutrients nutrients = null;
@@ -25,7 +25,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
   private BrandedFoodObjectDietLabels dietLabels = null;
   private List<BrandedFoodObjectComponents> components = new ArrayList<BrandedFoodObjectComponents>();
   private List<BrandedFoodObjectPortions> portions = new ArrayList<BrandedFoodObjectPortions>();
-  private String commonName = null;
+  private String commonNames = null;
   private String description = null;
   private String footnote = null;
 
@@ -134,12 +134,12 @@ import io.swagger.v3.oas.annotations.media.Schema;
    **/
   
   @Schema(description = "Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")")
-  @JsonProperty("common_name")
-  public String getCommonName() {
-    return commonName;
+  @JsonProperty("common_names")
+  public String getCommonNames() {
+    return commonNames;
   }
-  public void setCommonName(String commonName) {
-    this.commonName = commonName;
+  public void setCommonNames(String commonNames) {
+    this.commonNames = commonNames;
   }
 
   /**
@@ -186,14 +186,14 @@ import io.swagger.v3.oas.annotations.media.Schema;
         Objects.equals(dietLabels, ingredientObjectItems.dietLabels) &&
         Objects.equals(components, ingredientObjectItems.components) &&
         Objects.equals(portions, ingredientObjectItems.portions) &&
-        Objects.equals(commonName, ingredientObjectItems.commonName) &&
+        Objects.equals(commonNames, ingredientObjectItems.commonNames) &&
         Objects.equals(description, ingredientObjectItems.description) &&
         Objects.equals(footnote, ingredientObjectItems.footnote);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, components, portions, commonName, description, footnote);
+    return Objects.hash(name, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, components, portions, commonNames, description, footnote);
   }
 
   @Override
@@ -209,7 +209,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
     sb.append("    dietLabels: ").append(toIndentedString(dietLabels)).append("\n");
     sb.append("    components: ").append(toIndentedString(components)).append("\n");
     sb.append("    portions: ").append(toIndentedString(portions)).append("\n");
-    sb.append("    commonName: ").append(toIndentedString(commonName)).append("\n");
+    sb.append("    commonNames: ").append(toIndentedString(commonNames)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    footnote: ").append(toIndentedString(footnote)).append("\n");
     sb.append("}");
