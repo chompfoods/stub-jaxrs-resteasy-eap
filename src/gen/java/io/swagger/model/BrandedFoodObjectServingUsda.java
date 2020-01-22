@@ -9,7 +9,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="Serving information from the USDA")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T15:36:21.004Z[GMT]")public class BrandedFoodObjectServingUsda   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T19:40:24.784Z[GMT]")public class BrandedFoodObjectServingUsda   {
   private String size = null;
   private String measurementUnit = null;
   private String sizeFulltext = null;

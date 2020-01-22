@@ -10,8 +10,8 @@ import java.util.List;
 import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
-@Schema(description="Please read the description of each field in this API response object example. By default, the value of each field is __null__. This indicates an unknown state or that no data exists.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T15:36:21.004Z[GMT]")public class BrandedFoodObject   {
+@Schema(description="Please read the description of each field in this API response object example. By default, the value of each field is **null**. This indicates an unknown state or that no data exists.")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T19:40:24.784Z[GMT]")public class BrandedFoodObject   {
   private List<BrandedFoodObjectItems> items = new ArrayList<BrandedFoodObjectItems>();
 
   /**
