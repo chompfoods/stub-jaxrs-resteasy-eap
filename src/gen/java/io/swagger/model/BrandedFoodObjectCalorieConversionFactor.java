@@ -10,7 +10,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing the multiplication factors to be used when calculating energy from macronutrients for a specific food.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-21T23:19:12.767Z[GMT]")public class BrandedFoodObjectCalorieConversionFactor   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T12:50:39.658Z[GMT]")public class BrandedFoodObjectCalorieConversionFactor   {
   private BigDecimal proteinValue = null;
   private BigDecimal fatValue = null;
   private BigDecimal carbohydrateValue = null;

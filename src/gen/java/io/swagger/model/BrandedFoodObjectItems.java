@@ -9,6 +9,7 @@ import io.swagger.model.BrandedFoodObjectComponents;
 import io.swagger.model.BrandedFoodObjectCountryDetails;
 import io.swagger.model.BrandedFoodObjectDietFlags;
 import io.swagger.model.BrandedFoodObjectDietLabels;
+import io.swagger.model.BrandedFoodObjectIngredients;
 import io.swagger.model.BrandedFoodObjectNutrients;
 import io.swagger.model.BrandedFoodObjectPackage;
 import io.swagger.model.BrandedFoodObjectPackagingPhotos;
@@ -21,11 +22,11 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-21T23:19:12.767Z[GMT]")public class BrandedFoodObjectItems   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T12:50:39.658Z[GMT]")public class BrandedFoodObjectItems   {
   private String barcode = null;
   private String name = null;
   private String brand = null;
-  private String ingredients = null;
+  private BrandedFoodObjectIngredients ingredients = null;
   private BrandedFoodObjectPackage _package = null;
   private BrandedFoodObjectServing serving = null;
   private List<String> categories = new ArrayList<String>();
@@ -92,15 +93,14 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
-   * Ingredients in order of highest value to least
    **/
   
-  @Schema(description = "Ingredients in order of highest value to least")
+  @Schema(description = "")
   @JsonProperty("ingredients")
-  public String getIngredients() {
+  public BrandedFoodObjectIngredients getIngredients() {
     return ingredients;
   }
-  public void setIngredients(String ingredients) {
+  public void setIngredients(BrandedFoodObjectIngredients ingredients) {
     this.ingredients = ingredients;
   }
 
