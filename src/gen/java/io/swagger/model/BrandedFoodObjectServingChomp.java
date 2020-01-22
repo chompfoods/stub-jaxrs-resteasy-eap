@@ -8,8 +8,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
-@Schema(description="Serving information from as seen on ChompThis.com")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T13:41:42.086Z[GMT]")public class BrandedFoodObjectServingChomp   {
+@Schema(description="Serving information from Chomp's internal database")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T14:07:33.834Z[GMT]")public class BrandedFoodObjectServingChomp   {
   private String size = null;
 
   /**

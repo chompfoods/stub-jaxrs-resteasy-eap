@@ -9,7 +9,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing photos of the ingredients on this item's packaging")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T13:41:42.086Z[GMT]")public class BrandedFoodObjectPackagingPhotosIngredients   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T14:07:33.834Z[GMT]")public class BrandedFoodObjectPackagingPhotosIngredients   {
   private String small = null;
   private String thumb = null;
   private String display = null;

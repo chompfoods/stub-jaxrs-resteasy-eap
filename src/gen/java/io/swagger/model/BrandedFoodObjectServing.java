@@ -11,7 +11,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing serving information for this item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T13:41:42.086Z[GMT]")public class BrandedFoodObjectServing   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T14:07:33.834Z[GMT]")public class BrandedFoodObjectServing   {
   private BrandedFoodObjectServingChomp chomp = null;
   private BrandedFoodObjectServingUsda usda = null;
 
