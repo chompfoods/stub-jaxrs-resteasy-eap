@@ -16,7 +16,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T13:57:41.486Z[GMT]")public class IngredientObjectItems   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T17:11:28.034Z[GMT]")public class IngredientObjectItems   {
   private String name = null;
   private List<String> categories = new ArrayList<String>();
   private List<IngredientObjectNutrients> nutrients = new ArrayList<IngredientObjectNutrients>();
@@ -25,7 +25,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
   private BrandedFoodObjectDietLabels dietLabels = null;
   private List<IngredientObjectComponents> components = new ArrayList<IngredientObjectComponents>();
   private List<IngredientObjectPortions> portions = new ArrayList<IngredientObjectPortions>();
-  private String commonNames = null;
+  private String commonName = null;
   private String description = null;
   private String footnote = null;
 
@@ -131,16 +131,16 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
-   * Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;)
+   * Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;)
    **/
   
-  @Schema(description = "Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")")
-  @JsonProperty("common_names")
-  public String getCommonNames() {
-    return commonNames;
+  @Schema(description = "Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")")
+  @JsonProperty("common_name")
+  public String getCommonName() {
+    return commonName;
   }
-  public void setCommonNames(String commonNames) {
-    this.commonNames = commonNames;
+  public void setCommonName(String commonName) {
+    this.commonName = commonName;
   }
 
   /**
@@ -187,14 +187,14 @@ import io.swagger.v3.oas.annotations.media.Schema;
         Objects.equals(dietLabels, ingredientObjectItems.dietLabels) &&
         Objects.equals(components, ingredientObjectItems.components) &&
         Objects.equals(portions, ingredientObjectItems.portions) &&
-        Objects.equals(commonNames, ingredientObjectItems.commonNames) &&
+        Objects.equals(commonName, ingredientObjectItems.commonName) &&
         Objects.equals(description, ingredientObjectItems.description) &&
         Objects.equals(footnote, ingredientObjectItems.footnote);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, components, portions, commonNames, description, footnote);
+    return Objects.hash(name, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, components, portions, commonName, description, footnote);
   }
 
   @Override
@@ -210,7 +210,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
     sb.append("    dietLabels: ").append(toIndentedString(dietLabels)).append("\n");
     sb.append("    components: ").append(toIndentedString(components)).append("\n");
     sb.append("    portions: ").append(toIndentedString(portions)).append("\n");
-    sb.append("    commonNames: ").append(toIndentedString(commonNames)).append("\n");
+    sb.append("    commonName: ").append(toIndentedString(commonName)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    footnote: ").append(toIndentedString(footnote)).append("\n");
     sb.append("}");
