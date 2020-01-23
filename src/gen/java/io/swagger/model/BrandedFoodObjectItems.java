@@ -7,7 +7,6 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.model.BrandedFoodObjectCountryDetails;
 import io.swagger.model.BrandedFoodObjectDietFlags;
 import io.swagger.model.BrandedFoodObjectDietLabels;
-import io.swagger.model.BrandedFoodObjectIngredients;
 import io.swagger.model.BrandedFoodObjectNutrients;
 import io.swagger.model.BrandedFoodObjectPackage;
 import io.swagger.model.BrandedFoodObjectPackagingPhotos;
@@ -18,15 +17,15 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T13:15:58.284Z[GMT]")public class BrandedFoodObjectItems   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T13:57:41.486Z[GMT]")public class BrandedFoodObjectItems   {
   private String barcode = null;
   private String name = null;
   private String brand = null;
-  private BrandedFoodObjectIngredients ingredients = null;
+  private String ingredients = null;
   private BrandedFoodObjectPackage _package = null;
   private BrandedFoodObjectServing serving = null;
   private List<String> categories = new ArrayList<String>();
-  private BrandedFoodObjectNutrients nutrients = null;
+  private List<BrandedFoodObjectNutrients> nutrients = new ArrayList<BrandedFoodObjectNutrients>();
   private BrandedFoodObjectDietLabels dietLabels = null;
   private List<BrandedFoodObjectDietFlags> dietFlags = new ArrayList<BrandedFoodObjectDietFlags>();
   private BrandedFoodObjectPackagingPhotos packagingPhotos = null;
@@ -83,14 +82,15 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
+   * This food item&#x27;s ingredients from greatest quantity to least
    **/
   
-  @Schema(description = "")
+  @Schema(description = "This food item's ingredients from greatest quantity to least")
   @JsonProperty("ingredients")
-  public BrandedFoodObjectIngredients getIngredients() {
+  public String getIngredients() {
     return ingredients;
   }
-  public void setIngredients(BrandedFoodObjectIngredients ingredients) {
+  public void setIngredients(String ingredients) {
     this.ingredients = ingredients;
   }
 
@@ -131,14 +131,15 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
+   * An array containing nutrient informatio objects for this food item
    **/
   
-  @Schema(description = "")
+  @Schema(description = "An array containing nutrient informatio objects for this food item")
   @JsonProperty("nutrients")
-  public BrandedFoodObjectNutrients getNutrients() {
+  public List<BrandedFoodObjectNutrients> getNutrients() {
     return nutrients;
   }
-  public void setNutrients(BrandedFoodObjectNutrients nutrients) {
+  public void setNutrients(List<BrandedFoodObjectNutrients> nutrients) {
     this.nutrients = nutrients;
   }
 

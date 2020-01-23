@@ -10,7 +10,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information on a specific component of this food item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T13:15:58.284Z[GMT]")public class IngredientObjectComponents   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T13:57:41.486Z[GMT]")public class IngredientObjectComponents   {
   private String name = null;
   private BigDecimal pctWeight = null;
   private BigDecimal gramWeight = null;

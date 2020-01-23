@@ -16,10 +16,10 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T13:15:58.284Z[GMT]")public class IngredientObjectItems   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T13:57:41.486Z[GMT]")public class IngredientObjectItems   {
   private String name = null;
   private List<String> categories = new ArrayList<String>();
-  private IngredientObjectNutrients nutrients = null;
+  private List<IngredientObjectNutrients> nutrients = new ArrayList<IngredientObjectNutrients>();
   private IngredientObjectCalorieConversionFactor calorieConversionFactor = null;
   private BigDecimal proteinConversionFactor = null;
   private BrandedFoodObjectDietLabels dietLabels = null;
@@ -55,14 +55,15 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
+   * An array containing nutrient informatio objects for this food item
    **/
   
-  @Schema(description = "")
+  @Schema(description = "An array containing nutrient informatio objects for this food item")
   @JsonProperty("nutrients")
-  public IngredientObjectNutrients getNutrients() {
+  public List<IngredientObjectNutrients> getNutrients() {
     return nutrients;
   }
-  public void setNutrients(IngredientObjectNutrients nutrients) {
+  public void setNutrients(List<IngredientObjectNutrients> nutrients) {
     this.nutrients = nutrients;
   }
 
