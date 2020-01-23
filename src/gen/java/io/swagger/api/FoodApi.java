@@ -27,7 +27,7 @@ import javax.validation.constraints.*;
 @Path("/food")
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T19:40:24.784Z[GMT]")public interface FoodApi  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T13:07:59.982Z[GMT]")public interface FoodApi  {
    
     @GET
     @Path("/branded/barcode.php")

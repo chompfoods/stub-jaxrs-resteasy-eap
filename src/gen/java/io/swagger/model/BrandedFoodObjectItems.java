@@ -22,7 +22,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-22T19:40:24.784Z[GMT]")public class BrandedFoodObjectItems   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T13:07:59.982Z[GMT]")public class BrandedFoodObjectItems   {
   private String barcode = null;
   private String name = null;
   private String brand = null;
@@ -48,7 +48,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
   private List<String> minerals = new ArrayList<String>();
   private List<String> traces = new ArrayList<String>();
   private List<String> vitamins = new ArrayList<String>();
-  private List<String> commonNames = new ArrayList<String>();
   private String description = null;
   private List<String> keywords = new ArrayList<String>();
   private String footnote = null;
@@ -370,19 +369,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
-   * An array containing other names commonly associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; a common name may be \&quot;Chicken enchilada\&quot;)
-   **/
-  
-  @Schema(description = "An array containing other names commonly associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" a common name may be \"Chicken enchilada\")")
-  @JsonProperty("common_names")
-  public List<String> getCommonNames() {
-    return commonNames;
-  }
-  public void setCommonNames(List<String> commonNames) {
-    this.commonNames = commonNames;
-  }
-
-  /**
    * A description of this item
    **/
   
@@ -456,7 +442,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
         Objects.equals(minerals, brandedFoodObjectItems.minerals) &&
         Objects.equals(traces, brandedFoodObjectItems.traces) &&
         Objects.equals(vitamins, brandedFoodObjectItems.vitamins) &&
-        Objects.equals(commonNames, brandedFoodObjectItems.commonNames) &&
         Objects.equals(description, brandedFoodObjectItems.description) &&
         Objects.equals(keywords, brandedFoodObjectItems.keywords) &&
         Objects.equals(footnote, brandedFoodObjectItems.footnote);
@@ -464,7 +449,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 
   @Override
   public int hashCode() {
-    return Objects.hash(barcode, name, brand, ingredients, _package, serving, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, dietFlags, packagingPhotos, components, portions, allergens, brandList, countries, countryDetails, palmOilIngredients, ingredientList, hasEnglishIngredients, minerals, traces, vitamins, commonNames, description, keywords, footnote);
+    return Objects.hash(barcode, name, brand, ingredients, _package, serving, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, dietFlags, packagingPhotos, components, portions, allergens, brandList, countries, countryDetails, palmOilIngredients, ingredientList, hasEnglishIngredients, minerals, traces, vitamins, description, keywords, footnote);
   }
 
   @Override
@@ -497,7 +482,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
     sb.append("    minerals: ").append(toIndentedString(minerals)).append("\n");
     sb.append("    traces: ").append(toIndentedString(traces)).append("\n");
     sb.append("    vitamins: ").append(toIndentedString(vitamins)).append("\n");
-    sb.append("    commonNames: ").append(toIndentedString(commonNames)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    keywords: ").append(toIndentedString(keywords)).append("\n");
     sb.append("    footnote: ").append(toIndentedString(footnote)).append("\n");
