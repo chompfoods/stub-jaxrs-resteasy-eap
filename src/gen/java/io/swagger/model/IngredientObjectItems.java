@@ -16,7 +16,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-23T17:11:28.034Z[GMT]")public class IngredientObjectItems   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-24T13:21:53.096Z[GMT]")public class IngredientObjectItems   {
   private String name = null;
   private List<String> categories = new ArrayList<String>();
   private List<IngredientObjectNutrients> nutrients = new ArrayList<IngredientObjectNutrients>();
