@@ -13,7 +13,7 @@ import java.io.InputStream;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-24T13:21:53.096Z[GMT]")public class FoodApiServiceImpl implements FoodApi {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-24T13:22:21.987Z[GMT]")public class FoodApiServiceImpl implements FoodApi {
       public Response foodBrandedBarcodePhpGet(String code,SecurityContext securityContext) {
       // do some magic!
       return Response.ok().build();
