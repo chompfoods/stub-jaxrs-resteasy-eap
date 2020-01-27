@@ -27,7 +27,7 @@ import javax.validation.constraints.*;
 @Path("/food")
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-27T21:16:22.699Z[GMT]")public interface FoodApi  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-27T21:18:02.333Z[GMT]")public interface FoodApi  {
    
     @GET
     @Path("/branded/barcode.php")
@@ -87,6 +87,6 @@ import javax.validation.constraints.*;
                 @ApiResponse(responseCode = "404", description = "**Not found** - No food items were found. "),
                 @ApiResponse(responseCode = "500", description = "**Server error** - Internal server error, request failed, or base error. *Please **[contact us](https://chompthis.com/api/ticket-new.php)** if you see this.* ")
          })
-    Response foodIngredientSearchPhpGet( @NotNull @QueryParam("find") Integer find, @QueryParam("raw") Boolean raw, @QueryParam("limit") Integer limit,@Context SecurityContext securityContext);
+    Response foodIngredientSearchPhpGet( @NotNull @QueryParam("find") String find, @QueryParam("raw") Boolean raw, @QueryParam("limit") Integer limit,@Context SecurityContext securityContext);
 
 }
