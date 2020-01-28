@@ -13,7 +13,7 @@ import java.io.InputStream;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-27T21:28:00.316Z[GMT]")public class FoodApiServiceImpl implements FoodApi {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-28T13:14:16.127Z[GMT]")public class FoodApiServiceImpl implements FoodApi {
       public Response foodBrandedBarcodePhpGet(String code,SecurityContext securityContext) {
       // do some magic!
       return Response.ok().build();
@@ -26,7 +26,7 @@ import javax.ws.rs.core.SecurityContext;
       // do some magic!
       return Response.ok().build();
   }
-      public Response foodIngredientSearchPhpGet(String find,Boolean raw,Integer limit,SecurityContext securityContext) {
+      public Response foodIngredientSearchPhpGet(String find,Integer limit,SecurityContext securityContext) {
       // do some magic!
       return Response.ok().build();
   }
