@@ -15,7 +15,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-28T14:07:08.315Z[GMT]")public class IngredientObjectItems   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-28T14:08:55.482Z[GMT]")public class IngredientObjectItems   {
   private String name = null;
   private List<String> categories = new ArrayList<String>();
   private List<IngredientObjectNutrients> nutrients = new ArrayList<IngredientObjectNutrients>();
@@ -131,10 +131,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
-   * Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.
+   * Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall
    **/
   
-  @Schema(description = "Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.")
+  @Schema(description = "Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall")
   @JsonProperty("footnote")
   public String getFootnote() {
     return footnote;
@@ -144,10 +144,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
-   * The original search term that found this food item.
+   * The original search term that found this food item
    **/
   
-  @Schema(description = "The original search term that found this food item.")
+  @Schema(description = "The original search term that found this food item")
   @JsonProperty("search_term")
   public String getSearchTerm() {
     return searchTerm;
@@ -157,10 +157,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
   }
 
   /**
-   * A value that represents how similar the name of this food item is to the original search term.
+   * A value that represents how similar the name of this food item is to the original search term. The lower the value the closer this item&#x27;s name is to the original search term.
    **/
   
-  @Schema(description = "A value that represents how similar the name of this food item is to the original search term.")
+  @Schema(description = "A value that represents how similar the name of this food item is to the original search term. The lower the value the closer this item's name is to the original search term.")
   @JsonProperty("score")
   public String getScore() {
     return score;
