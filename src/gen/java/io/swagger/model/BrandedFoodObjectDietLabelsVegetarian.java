@@ -9,7 +9,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information on this item's compatibility with Vegetarian diets")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-28T13:14:16.127Z[GMT]")public class BrandedFoodObjectDietLabelsVegetarian   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-28T13:53:56.762Z[GMT]")public class BrandedFoodObjectDietLabelsVegetarian   {
   private String name = null;
   private Boolean isCompatible = null;
   private Integer compatibilityLevel = null;
