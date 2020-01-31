@@ -10,7 +10,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing information on a specific component of this food item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-18T04:57:06.480Z[GMT]")public class BrandedFoodObjectComponents   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-30T02:08:15.871Z[GMT]")public class IngredientObjectComponents   {
   private String name = null;
   private BigDecimal pctWeight = null;
   private BigDecimal gramWeight = null;
@@ -91,12 +91,12 @@ import io.swagger.v3.oas.annotations.media.Schema;
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    BrandedFoodObjectComponents brandedFoodObjectComponents = (BrandedFoodObjectComponents) o;
-    return Objects.equals(name, brandedFoodObjectComponents.name) &&
-        Objects.equals(pctWeight, brandedFoodObjectComponents.pctWeight) &&
-        Objects.equals(gramWeight, brandedFoodObjectComponents.gramWeight) &&
-        Objects.equals(isRefuse, brandedFoodObjectComponents.isRefuse) &&
-        Objects.equals(dataPoints, brandedFoodObjectComponents.dataPoints);
+    IngredientObjectComponents ingredientObjectComponents = (IngredientObjectComponents) o;
+    return Objects.equals(name, ingredientObjectComponents.name) &&
+        Objects.equals(pctWeight, ingredientObjectComponents.pctWeight) &&
+        Objects.equals(gramWeight, ingredientObjectComponents.gramWeight) &&
+        Objects.equals(isRefuse, ingredientObjectComponents.isRefuse) &&
+        Objects.equals(dataPoints, ingredientObjectComponents.dataPoints);
   }
 
   @Override
@@ -107,7 +107,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class BrandedFoodObjectComponents {\n");
+    sb.append("class IngredientObjectComponents {\n");
     
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    pctWeight: ").append(toIndentedString(pctWeight)).append("\n");

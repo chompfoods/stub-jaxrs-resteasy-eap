@@ -10,7 +10,7 @@ import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description="An object containing the multiplication factors to be used when calculating energy from macronutrients for a specific food.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-18T04:57:06.480Z[GMT]")public class BrandedFoodObjectCalorieConversionFactor   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaResteasyEapServerCodegen", date = "2020-01-30T02:08:15.871Z[GMT]")public class IngredientObjectCalorieConversionFactor   {
   private BigDecimal proteinValue = null;
   private BigDecimal fatValue = null;
   private BigDecimal carbohydrateValue = null;
@@ -63,10 +63,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    BrandedFoodObjectCalorieConversionFactor brandedFoodObjectCalorieConversionFactor = (BrandedFoodObjectCalorieConversionFactor) o;
-    return Objects.equals(proteinValue, brandedFoodObjectCalorieConversionFactor.proteinValue) &&
-        Objects.equals(fatValue, brandedFoodObjectCalorieConversionFactor.fatValue) &&
-        Objects.equals(carbohydrateValue, brandedFoodObjectCalorieConversionFactor.carbohydrateValue);
+    IngredientObjectCalorieConversionFactor ingredientObjectCalorieConversionFactor = (IngredientObjectCalorieConversionFactor) o;
+    return Objects.equals(proteinValue, ingredientObjectCalorieConversionFactor.proteinValue) &&
+        Objects.equals(fatValue, ingredientObjectCalorieConversionFactor.fatValue) &&
+        Objects.equals(carbohydrateValue, ingredientObjectCalorieConversionFactor.carbohydrateValue);
   }
 
   @Override
@@ -77,7 +77,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class BrandedFoodObjectCalorieConversionFactor {\n");
+    sb.append("class IngredientObjectCalorieConversionFactor {\n");
     
     sb.append("    proteinValue: ").append(toIndentedString(proteinValue)).append("\n");
     sb.append("    fatValue: ").append(toIndentedString(fatValue)).append("\n");
